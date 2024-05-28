@@ -14,4 +14,4 @@ Before=ignition-files.service
 [Service]
 Type=oneshot
 # Special case: the oem_id openstack does not match the afterburn name openstack-metadata
-ExecStart=/usr/bin/coreos-metadata --provider openstack-metadata --hostname=/sysroot/etc/hostname
+ExecStart=/usr/bin/coreos-metadata --provider openstack --hostname=/sysroot/etc/hostname
