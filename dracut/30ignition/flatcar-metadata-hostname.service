@@ -35,6 +35,7 @@ ConditionKernelCommandLine=|coreos.oem.id=packet
 ConditionKernelCommandLine=|flatcar.oem.id=packet
 ConditionKernelCommandLine=|flatcar.oem.id=hetzner
 ConditionKernelCommandLine=|flatcar.oem.id=kubevirt
+ConditionKernelCommandLine=|flatcar.oem.id=ionoscloud
 
 OnFailure=emergency.target
 OnFailureJobMode=isolate
