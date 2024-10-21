@@ -39,4 +39,8 @@ if [ "${oem_cmdline}" = "pxe" ]; then
   oem_cmdline="metal"
 fi
 
+if [ "${oem_cmdline}" = "ionoscloud" ]; then
+  oem_cmdline="qemu"
+fi
+
 { echo "OEM_ID=${oem_cmdline}" ; echo "PLATFORM_ID=${oem_cmdline}" ; } > /run/ignition.env
