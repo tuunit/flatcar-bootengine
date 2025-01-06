@@ -39,8 +39,4 @@ if [ "${oem_cmdline}" = "pxe" ]; then
   oem_cmdline="metal"
 fi
 
-if [ "${oem_cmdline}" = "ionoscloud" ]; then
-  { echo "OEM_ID=ionoscloud" ; echo "PLATFORM_ID=qemu" } > /run/ignition.env #; echo "IGNITION_CONFIG_FILE=/sysroot/var/lib/cloud/seed/nocloud/user-data" } > /run/ignition.env
-else
-  { echo "OEM_ID=${oem_cmdline}" ; echo "PLATFORM_ID=${oem_cmdline}" ; } > /run/ignition.env
-fi
+{ echo "OEM_ID=${oem_cmdline}" ; echo "PLATFORM_ID=${oem_cmdline}" ; } > /run/ignition.env
